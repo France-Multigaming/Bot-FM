@@ -6,6 +6,7 @@ var client = new Discord.Client();
 // Config
 var prefix = "/";
 
+
 // Discord Status
 client.on("ready", function() {
     client.user.setActivity('Discord', { type: 'WATCHING' })
@@ -28,12 +29,8 @@ client.on("ready", function() {
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "help"){
-        var embed = new Discord.RichEmbed()
-            .setColor("#000099")
-            .setDescription("**__Liste des commandes :__**\n\n ***__Utilisateur__***\n\n**/ping** `Savoir si le Bot est en ligne et obtenir sa latence.`\n\n**/stats** `Obtenir les statistiques d'un utilisateur.`\n\n ***__Admin__***\n\n**/kick** `Expulser utilisateur via le Bot`\n\n**/ban** `Bannir utilisateur via le bot`")
-            .setFooter("France Multigaming");
-        message.channel.sendEmbed(embed);
+    if (message.content === prefix + "ping"){
+        message.channel.send("pong")
     }
 
     if (message.content === prefix + "salut"){
