@@ -50,8 +50,6 @@ client.on("message", message=>{
             .setFooter("France Multigaming");
         message.channel.sendEmbed(embed);
     }
-
-    
 });
 
 // Authentication
