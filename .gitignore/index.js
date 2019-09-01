@@ -9,7 +9,10 @@ const fs = require('fs');
 client.commands = new Discord.Collection();
 
 fs.readdir("./Commandes/", (error, f) => {
-    if(error) console.log(error);
+    if(error) {
+  console.error(error);
+  process.exit();
+}
 
     let commandes = f.filter(f => f.split(".").pop() === "js");
     if(commandes.length <= 0) return console.log("Aucune commande trouvé !");
