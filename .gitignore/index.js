@@ -59,47 +59,6 @@ client.on("message", message=>{
             .setFooter("France Multigaming");
         message.channel.sendEmbed(embed);
     }
-
-    if (message.content === prefix + "salut"){
-        message.channel.send("Bonjour " + message.author.username + "!")
-    }
-
-    if (message.content === prefix + "quel âge à tu?"){
-        message.channel.send("j'ai été créé le 21/07/2019 à 12h00.")
-    }
-
-    if (message.content === prefix + "aurevoir"){
-        message.channel.send("A plus tard " + message.author.username + ".")
-    }
-
-    if (message.content === prefix + "au revoir"){
-        message.channel.send("A plus tard " + message.author.username + ".")
-    }
-
-    if (message.content === prefix + "bienvenue"){
-        message.channel.send("Salut {user} ! Bienvenue dans la communauté de **France Multigaming** 🎉🤗 ! Afin de voir __***les salons de jeux***__ te correspondant, merci de te reporter dans <#584335406917746689> . Je t'invite aussi à prendre connaissance des <#584335354031636481> et <#584326401935671299> ainsi que les règles pour les jeux auxquels tu pourrais participer :innocent:. Bon jeu!")
-    }
-
-    if (message.content === prefix + "test"){
-        var embed = new Discord.RichEmbed()
-            .setDescription("▬▬▬▬▬▬▬▬▬▬▬▬ RÔLE ▬▬▬▬▬▬▬▬▬▬▬▬\n\nInteragissez à ce message avec les réactions qui correspondent aux jeux auxquels vous jouez ou pour lesquels vous souhaitez être mentionables et notifiés.\n\nCela vous permet d'accéder aux différents salons de jeu du Discord.\n\nRéagissez  <a:ARKFM:589972097443561494> pour rejoindre <@&594839830177775616>\nRéagissez  <a:ECOFM:584333052780478464> pour rejoindre <@&594839647696453642>\nRéagissez  <a:RUSTFM:594838078364057620> pour rejoindre <@&594824906777165824>\nRéagissez  <a:FS19FM:589972120759435290> pour rejoindre <@&594840007764606976>\nRéagissez  <a:CONANFM:584333675378900992> pour rejoindre <@&594840202929897472>\n\n")
-            .setFooter("▬▬▬▬▬▬▬▬▬▬▬ France Multigaming ▬▬▬▬▬▬▬▬▬▬▬")
-        message.channel.sendEmbed(embed);
-    }
-
-    if (message.content === prefix + "bienvenue2"){
-        var embed = new Discord.RichEmbed()
-            .setColor("#000099")
-            .setAuthor(user.user.username, user.user.displayAvatarURL)
-            .setDescription("Salut {user} ! Bienvenue dans la communauté de **France Multigaming** 🎉🤗 ! Afin de voir __***les salons de jeux***__ te correspondant, merci de te reporter dans <#584335406917746689> . Je t'invite aussi à prendre connaissance des <#584335354031636481> et <#584326401935671299> ainsi que les règles pour les jeux auxquels tu pourrais participer :innocent:. Bon jeu!")
-            .setFooter("France Multigaming");
-        message.channel.sendEmbed(embed);
-    }
-    
-    if (message.content === prefix + "foot"){
-        message.channel.send("Sport opposant deux équipes de onze joueurs, où il faut faire pénétrer un ballon rond dans les buts adverses sans utiliser les mains (au Canada, on dit soccer).")
-    }
-    
 });
 
 // Authentification
