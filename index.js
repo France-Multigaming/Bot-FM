@@ -6,7 +6,7 @@ var client = new Discord.Client();
 // Initialize commands collection
 client.commands = new Discord.Collection();
 
-for(const x of ['ban', 'kick', 'clear', 'ping']) {
+for(const x of ['ban', 'kick', 'clear', 'ping', 'stats']) {
     console.info('Load command', x);
      // Build path
     const path = `./Commandes/${x}.js`;
