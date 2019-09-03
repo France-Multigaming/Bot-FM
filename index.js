@@ -16,7 +16,7 @@ for(const x of ['ban', 'kick', 'clear']) {
     client.commands.set(command.help.name, command);
 }
 
-for(const x of ['message', 'ready']) {
+for(const x of ['message', 'ready', 'ping']) {
     console.info('Load event', x);
      // Build path
     const path = `./Events/${x}.js`;
