@@ -39,7 +39,7 @@ client.on("guildMemberAdd", user =>{
 // Config
 const prefix = "/";
 
-// Comands
+// Help
 client.on("message", message=>{
     if (!message.guild) return
 
