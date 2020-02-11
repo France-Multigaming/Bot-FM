@@ -31,7 +31,7 @@ client.on("guildMemberAdd", user =>{
     let joinEmbed = new Discord.RichEmbed()
         .setColor("#000099")
         .setAuthor(user.user.username, user.user.displayAvatarURL)
-        .setDescription("Salut "+ user + "! Bienvenue dans la communauté de **France Multigaming** 🎉🤗 ! Afin de voir __***les salons de jeux***__ te correspondant, merci de te reporter dans <#584335406917746689> . Je t'invite aussi à prendre connaissance des <#584335354031636481> et <#584326401935671299> ainsi que les règles pour les jeux auxquels tu pourrais participer :innocent:. Si le Cœur t'en dit, inscris toi sur notre site https://france-multigaming.fr pour ne rien rater des projets à venir. Bon jeu!")
+        .setDescription("Salut "+ user + "! Bienvenue dans la communauté de **France Multigaming** 🎉🤗 ! Afin de voir __***les salons de jeux***__ te correspondant, merci de te reporter dans <#584335406917746689> . Je t'invite aussi à prendre connaissance des <#584335354031636481> et <#584326401935671299> ainsi que les règles pour les jeux auxquels tu pourrais participer :innocent:. Si le cœur t'en dit, inscris toi sur notre site https://france-multigaming.fr pour ne rien rater des projets à venir. Bon jeu!")
         .setFooter("France Multigaming");
     user.guild.channels.get("584055404955303936").send(joinEmbed);
 });
