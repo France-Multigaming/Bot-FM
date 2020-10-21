@@ -32,7 +32,6 @@ client.on("guildMemberAdd", user =>{
         .setColor("#000099")
         .setAuthor(user.user.username, user.user.displayAvatarURL)
         .setDescription("Salut "+ user + "! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!\n\n :arrow_right: <#584335406917746689> Pour voir les salons de jeux te correspondant.\n\n :arrow_right: <#584335354031636481> Pour prendre connaissance des règles de la communauté.\n\n :arrow_right: <#584326401935671299> Pour voir les dernières infos.")
-        .setFooter("France Multigaming");
     user.guild.channels.get("584055404955303936").send(joinEmbed);
 });
 
