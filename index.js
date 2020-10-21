@@ -53,5 +53,18 @@ client.on("message", message=>{
 
 });
 
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "bvn"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Salut @user ! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!\n\n :arrow_right: <#584335406917746689> Pour prendre connaissance des règles de la communauté.\n\n :arrow_right: <#584335354031636481> Pour voir les salons de jeux te correspondant.\n\n :arrow_right: <#584326401935671299> Pour voir les dernières infos.")
+            .setFooter("France Multigaming");
+        message.channel.sendEmbed(embed);
+    }
+
+});
+
 // Authentication
 client.login(process.env.TOKEN);
