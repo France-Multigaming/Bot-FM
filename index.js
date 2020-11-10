@@ -25,10 +25,9 @@ for(const x of ['message', 'ready']) {
     // Inject event
     client.on(x, event.bind(null, client));
 }
-
 // Welcome message
 client.on("guildMemberAdd", user =>{
-    user.guild.channels.get("584055404955303936").send("Salut "+ user + "! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!\n\n :arrow_right: <#584335406917746689> Pour voir les salons de jeux te correspondant.\n\n :arrow_right: <#584335354031636481> Pour prendre connaissance des règles de la communauté.\n\n :arrow_right: <#584326401935671299> Pour voir les dernières infos.");
+    user.guild.channels.cache.get(config.greeting.channel).send("Salut "+ user + "! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!\n\n :arrow_right: <#584335406917746689> Pour voir les salons de jeux te correspondant.\n\n :arrow_right: <#584335354031636481> Pour prendre connaissance des règles de la communauté.\n\n :arrow_right: <#584326401935671299> Pour voir les dernières infos.");
 });
 
 // Config
