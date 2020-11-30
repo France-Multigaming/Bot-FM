@@ -59,5 +59,38 @@ client.on("message", message=>{
 
 });
 
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg1"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Salut Visiteur! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg2"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Comme tu peux le constater ici tu ne vois pas grand chose.")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription(" Il va falloir me prouver que tu n'es pas un :robot: robot!")
+        message.channel.sendEmbed(embed);
+    }
+
+});
 // Authentication
 client.login(process.env.TOKEN);
