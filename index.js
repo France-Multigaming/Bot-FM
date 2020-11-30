@@ -158,5 +158,16 @@ client.on("message", message=>{
     }
 
 });
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg10"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription(":warning: Pour accéder au disord réagissez  SOUS LE MESSAGE avec :FM:")
+        message.channel.sendEmbed(embed);
+    }
+
+});
 // Authentication
 client.login(process.env.TOKEN);
