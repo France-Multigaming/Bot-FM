@@ -147,5 +147,16 @@ client.on("message", message=>{
     }
 
 });
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg8"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Essai ici:<#782704015255404556>.")
+        message.channel.sendEmbed(embed);
+    }
+
+});
 // Authentication
 client.login(process.env.TOKEN);
