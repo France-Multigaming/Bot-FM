@@ -131,7 +131,7 @@ client.on("message", message=>{
     if (message.content === prefix + "msg7"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("Il te suffit de réagire avec certain message pour te voir attribuer un rôle")
+            .setDescription("Il te suffit de réagir avec certain message pour te voir attribuer un rôle")
         message.channel.sendEmbed(embed);
     }
 
