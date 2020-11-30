@@ -150,7 +150,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "msg8"){
+    if (message.content === prefix + "msg9"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("Essai ici:<#782704015255404556>.")
