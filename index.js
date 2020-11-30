@@ -87,7 +87,29 @@ client.on("message", message=>{
     if (message.content === prefix + "msg3"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription(" Il va falloir me prouver que tu n'es pas un :robot: robot!")
+            .setDescription("Il va falloir me prouver que tu n'es pas un :robot: robot!")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg4"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Pour commencer reagit avec :white_check_mark: sous le message.")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg5"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Connais-tu le sisteme de reaction-role?.")
         message.channel.sendEmbed(embed);
     }
 
