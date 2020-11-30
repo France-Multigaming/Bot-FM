@@ -164,7 +164,7 @@ client.on("message", message=>{
     if (message.content === prefix + "msg10"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("Super!Si tu n'est pas un robot réagit avec :robot: sous le message.")
+            .setDescription("Super! Si tu n'est pas un robot réagit avec :robot: sous le message.")
         message.channel.sendEmbed(embed);
     }
 
