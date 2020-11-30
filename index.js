@@ -109,7 +109,40 @@ client.on("message", message=>{
     if (message.content === prefix + "msg5"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("Connais-tu le sisteme de reaction-role?.")
+            .setDescription("Super! On y est presque.")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg6"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Connait-tu le système d'auto-role?")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg7"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Il te suffit de réagire avec certain message pour te voir attribuer un rôle")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg8"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Ce rôle te donne accés aux salons rattaché!")
         message.channel.sendEmbed(embed);
     }
 
