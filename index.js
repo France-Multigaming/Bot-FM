@@ -175,7 +175,7 @@ client.on("message", message=>{
     if (message.content === prefix + "msg11"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("@everyone Vous pouvez choisir votre métier!")
+            .setDescription("Vous pouvez choisir votre métier!")
         message.channel.sendEmbed(embed);
     }
 
