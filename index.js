@@ -169,6 +169,7 @@ client.on("message", message=>{
     }
 
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -176,6 +177,17 @@ client.on("message", message=>{
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("Vous pouvez choisir votre métier!")
+        message.channel.sendEmbed(embed);
+    }
+
+});
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg12"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("__**RAPPEL AUX GERANTS**__: Pour obtenir vos accès à la categorie passez par le staff FiveM.")
         message.channel.sendEmbed(embed);
     }
 
