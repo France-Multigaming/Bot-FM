@@ -192,5 +192,16 @@ client.on("message", message=>{
     }
 
 });
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg13"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Pour accèder à la boutique aux dons veuillez vous connecter ou creer un compte.")
+        message.channel.sendEmbed(embed);
+    }
+
+});
 // Authentication
 client.login(process.env.TOKEN);
