@@ -44,7 +44,6 @@ client.on("message", message=>{
             .setFooter("France Multigaming");
         message.channel.sendEmbed(embed);
     }
-
 });
 
 client.on("message", message=>{
@@ -56,7 +55,6 @@ client.on("message", message=>{
             .setDescription("Salut @user ! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!\n\n :arrow_right: <#584335406917746689> Pour voir les salons de jeux te correspondant.\n\n :arrow_right: <#584335354031636481> Pour prendre connaissance des règles de la communauté.\n\n :arrow_right: <#584326401935671299> Pour voir les dernières infos.")
         message.channel.sendEmbed(embed);
     }
-
 });
 
 client.on("message", message=>{
@@ -68,8 +66,8 @@ client.on("message", message=>{
             .setDescription("Salut Visiteur! Bienvenue dans la communauté de **France Multigaming** 🎉🤗!")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -79,8 +77,8 @@ client.on("message", message=>{
             .setDescription("Comme tu peux le constater ici tu ne vois pas grand chose.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -90,8 +88,8 @@ client.on("message", message=>{
             .setDescription("Il va falloir me prouver que tu n'es pas un :robot: robot!")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -101,8 +99,8 @@ client.on("message", message=>{
             .setDescription("Pour commencer reagit avec :white_check_mark: sous le message.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -112,8 +110,8 @@ client.on("message", message=>{
             .setDescription("Super! On y est presque.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -123,8 +121,8 @@ client.on("message", message=>{
             .setDescription("Connait-tu le système d'auto-role?")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -134,8 +132,8 @@ client.on("message", message=>{
             .setDescription("Il te suffit de réagir avec certain message pour te voir attribuer un rôle")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -145,8 +143,8 @@ client.on("message", message=>{
             .setDescription("Ce rôle te donne accés aux salons rattaché!")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -156,8 +154,8 @@ client.on("message", message=>{
             .setDescription("Essai ici:<#782704015255404556>.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -167,7 +165,6 @@ client.on("message", message=>{
             .setDescription("Super! Si tu n'est pas un robot réagit avec :robot: sous le message.")
         message.channel.sendEmbed(embed);
     }
-
 });
 
 client.on("message", message=>{
@@ -179,8 +176,8 @@ client.on("message", message=>{
             .setDescription("Vous pouvez choisir votre métier!")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -190,8 +187,8 @@ client.on("message", message=>{
             .setDescription("__**RAPPEL AUX GERANTS**__: Pour obtenir vos accès à la categorie passez par le staff FiveM.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
@@ -201,7 +198,15 @@ client.on("message", message=>{
             .setDescription("Pour accèder à la boutique aux dons veuillez vous connecter ou creer un compte.")
         message.channel.sendEmbed(embed);
     }
-
 });
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "msg13"){
+        message.reply('Bienvenue chez **France Multigaming**\n\n la communauté multigaming française avec une multitude de joueurs qui se sont réunis sous une seule bannière pour jouer ensemble et construire des amitiés durables!\n\n Chacun de nous a une passion pour le jeu et nous cherchons toujours à élargir nos rangs dans tous nos groupes de jeux.\n\n Notre communauté abrite une variété de jeux! Comme vous pouvez le voir ci-dessus, nous prenons en charge plusieurs serveur de jeux, chacun avec une base de joueurs unique de 50% ou mieux. Ainsi, bien qu'il y ait des membres dans de nombreux groupes, vous pouvez compter sur un groupe dédié pour chaque jeux.\n\n :7DAYS: 7DAYS | :ARK: ARK  | :ARMA3: ARMA 3 | :CONAN: CONAN | :ECO: ECO | :FIVEM: FIVEM | :FS19: FS19 | :HELLION: HELLION | :MINECRAFT: MINECRAFT | :RUST: RUST\n\n Nous cherchons toujours à héberger de nouveaux jeux pour construire et maintenir des équipes solides et des amitiés qui feront leur marque dans le monde du jeu. Pour y parvenir, nous sommes toujours à la recherche de joueurs talentueux!\n\n Le plus serais que les joueurs viennent sur **Discord** lorsqu'ils jouent à des jeux.')
+    }
+});
+
 // Authentication
 client.login(process.env.TOKEN);
