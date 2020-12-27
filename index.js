@@ -334,5 +334,16 @@ client.on("message", message=>{
     }
 });
 
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "fm"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux faire parti de la communauté **France Multigaming**!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
 // Authentication
 client.login(process.env.TOKEN);
