@@ -200,5 +200,115 @@ client.on("message", message=>{
     }
 });
 
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "fivem"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre FiveM RP!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "eco"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre ECO!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "fs19"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre FS19!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "conan"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre CONAN!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "rust"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre RUST!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "eco"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre ARMA 3 MILSIM!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "7days"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre 7 DAYS TO DYE!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "ark"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre ARK!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "hellion"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre HELLION!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "minecraft"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre MINECRAFT!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
 // Authentication
 client.login(process.env.TOKEN);
