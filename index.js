@@ -52,7 +52,19 @@ client.on("message", message=>{
     if (message.content === prefix + "serveurs"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("**__Serveurs en ligne :__**\n\n ***__FiveM__***\n\n ***__ECO__***\n\n ***__7Days to Die__***\n\n ***__Conan Exiles__***\n\n`")
+            .setDescription("**__Serveurs en ligne :__**\n\n ***__FiveM__***\n\n ***__ECO__***\n\n ***__7Days to Die__***\n\n ***__Conan Exiles__***\n\n")
+            .setFooter("France Multigaming");
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "serveur"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**__Serveurs en ligne :__**\n\n ***__FiveM__***\n\n ***__ECO__***\n\n ***__7Days to Die__***\n\n ***__Conan Exiles__***\n\n")
             .setFooter("France Multigaming");
         message.channel.sendEmbed(embed);
     }
