@@ -351,7 +351,7 @@ client.on("message", message=>{
     if (message.content === prefix + "gend1"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
-            .setDescription("Bienvenue dans la gendarmerie, pour pouvoir continuer votre parcours d'engagement veuillez cocher :white_check_mark: sous le message.")
+            .setDescription("Bienvenue dans la gendarmerie, pour pouvoir continuer votre parcours d'engagement veuillez cocher :oncoming_police_car: sous le message.")
         message.channel.sendEmbed(embed);
     }
 });
