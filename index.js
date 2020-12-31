@@ -465,12 +465,33 @@ client.on("message", message=>{
         message.channel.sendEmbed(embed);
     }
 });
+
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "test110"){
+    if (message.content === prefix + "t1"){
         var embed = new Discord.RichEmbed()
-	    .attachFiles(['https://fivem-france.net/uploads/default/original/2X/9/9b6466a3e613c718d1d3c9953373fa962d927322.png'])
+	    .attachFiles(['https://fivem-france.net/uploads/default/optimized/2X/a/a1157a8adb06005d0855c7afa03f6603b29ed843_2_438x499.png'])
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "t2"){
+        var embed = new Discord.RichEmbed()
+	    .attachFiles(['https://fivem-france.net/uploads/default/original/2X/e/e5c6f43250fcc49dabe079f1e004b7cbf59c6a9e.png'])
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "t3"){
+        var embed = new Discord.RichEmbed()
+	    .attachFiles(['https://fivem-france.net/uploads/default/original/2X/9/9e10ebf6cb3c2c34b8e5e4f64d38aaabdfa9c174.png'])
         message.channel.sendEmbed(embed);
     }
 });
