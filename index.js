@@ -465,6 +465,16 @@ client.on("message", message=>{
         message.channel.sendEmbed(embed);
     }
 });
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "test110"){
+        var embed = new Discord.RichEmbed()
+	        .attachFiles(['https://fivem-france.net/uploads/default/original/2X/9/9b6466a3e613c718d1d3c9953373fa962d927322.png'])
+            .setColor("#000099")
+        message.channel.sendEmbed(embed);
+    }
+});
 
 // Authentication
 client.login(process.env.TOKEN);
