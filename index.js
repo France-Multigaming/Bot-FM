@@ -403,7 +403,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "4"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**4.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme crashes supprimer tout les fichiers dedans.")
@@ -414,7 +414,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "5"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**5.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme logs supprimer tout les fichiers dedans.")
@@ -425,7 +425,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "6"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**6.** Dans le Dossier Fivem Application Data , se trouve un fichier qui se nomme cache.xml supprimer le.")
@@ -436,7 +436,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "7"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**7.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme cache.")
@@ -447,7 +447,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "8"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**8.** Dans votre Dossier cache vous devrez supprimer tous les dossiers sauf celui nommé game.")
@@ -458,7 +458,7 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
-    if (message.content === prefix + "3"){
+    if (message.content === prefix + "9"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
             .setDescription("**9.** Vider votre corbeille.")
@@ -470,8 +470,7 @@ client.on("message", message=>{
 
     if (message.content === prefix + "test110"){
         var embed = new Discord.RichEmbed()
-	        .attachFiles(['https://fivem-france.net/uploads/default/original/2X/9/9b6466a3e613c718d1d3c9953373fa962d927322.png'])
-            .setColor("#000099")
+	    .attachFiles(['https://fivem-france.net/uploads/default/original/2X/9/9b6466a3e613c718d1d3c9953373fa962d927322.png'])
         message.channel.sendEmbed(embed);
     }
 });
