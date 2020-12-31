@@ -356,5 +356,115 @@ client.on("message", message=>{
     }
 });
 
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "0"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Voici un tuto dans les détails pour savoir comment vider votre cache proprement sur FiveM.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "1"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**1.** Trouver le Logo **FiveM** sur votre bureau.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "2"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**2.** Faites un clic droit sur le Logo et sélectionné Ouvrir l’emplacement du fichier.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**3.** Vous trouverez 3 Fichiers. Sélectionnez Fivem Application Data.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**4.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme crashes supprimer tout les fichiers dedans.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**5.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme logs supprimer tout les fichiers dedans.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**6.** Dans le Dossier Fivem Application Data , se trouve un fichier qui se nomme cache.xml supprimer le.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**7.** Dans le Dossier Fivem Application Data , se trouve un dossier qui se nomme cache.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**8.** Dans votre Dossier cache vous devrez supprimer tous les dossiers sauf celui nommé game.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "3"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("**9.** Vider votre corbeille.")
+        message.channel.sendEmbed(embed);
+    }
+});
+
 // Authentication
 client.login(process.env.TOKEN);
