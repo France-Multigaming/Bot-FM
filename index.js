@@ -348,6 +348,17 @@ client.on("message", message=>{
 client.on("message", message=>{
     if (!message.guild) return
 
+    if (message.content === prefix + "eve"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre EVE Militis!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
+client.on("message", message=>{
+    if (!message.guild) return
+
     if (message.content === prefix + "gend1"){
         var embed = new Discord.RichEmbed()
             .setColor("#000099")
