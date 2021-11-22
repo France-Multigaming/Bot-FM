@@ -356,6 +356,18 @@ client.on("message", message=>{
     }
 });
 
+
+client.on("message", message=>{
+    if (!message.guild) return
+
+    if (message.content === prefix + "fs22"){
+        var embed = new Discord.RichEmbed()
+            .setColor("#000099")
+            .setDescription("Je veux rejoindre FS22!")
+        message.channel.sendEmbed(embed);
+    }
+});
+
 client.on("message", message=>{
     if (!message.guild) return
 
